@@ -1,0 +1,13 @@
+.stats{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+.label,.quantity{
+display: block;
+border: 1px solid black;
+width:120px;
+text-align: center;
+}

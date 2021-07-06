@@ -12,7 +12,7 @@ function App() {
           name={desc.name}
           avatar={desc.avatar}
           tag={desc.tag}
-          location={desc.desc}
+          location={desc.location}
         ></ProfileDesc>
         <Stats stats={desc.stats}></Stats>
       </Profile>
