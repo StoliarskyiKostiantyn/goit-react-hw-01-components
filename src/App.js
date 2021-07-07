@@ -1,13 +1,13 @@
-import Profile from "./Components/Profile/Profile";
-import Stats from "./Components/Stats/Stats";
-import Container from "./Components/Container/Container";
-import ProfileDesc from "./Components/ProfileDesc/ProfileDesc";
-import desc from "../src/user.json";
-import StatList from "./Components/StatList/StatList";
-import StatEl from "./Components/StatEl/StatEl";
-import statistic from "./statistical-data.json";
+import Profile from './Components/Profile/Profile';
+import Stats from './Components/Stats/Stats';
+import Container from './Components/Container/Container';
+import ProfileDesc from './Components/ProfileDesc/ProfileDesc';
+import desc from '../src/user.json';
+import Statistics from './Components/Statistics/Statistics';
+import StatEl from './Components/StatEl/StatEl';
+import statistic from './statistical-data.json';
+import StatList from './Components/StatList/StatList';
 // const items = { desc };
-const statitems = { statistic };
 function App() {
   return (
     // <Container>
@@ -22,10 +22,7 @@ function App() {
     //   </Profile>
     // </Container>
     <Container>
-      <StatList
-        label={statistic.label}
-        percentage={statistic.percentage}
-      ></StatList>
+      <Statistics title="Upload stats" statitems={statistic}></Statistics>
     </Container>
   );
 }

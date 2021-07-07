@@ -1,5 +1,5 @@
-import s from "./StatEl.module.css";
-function StatEl({ label, percentage }) {
+import s from './StatEl.module.css';
+function StatEl({ title, label, percentage }) {
   return (
     <div>
       <span className={s.label}>{label}</span>
