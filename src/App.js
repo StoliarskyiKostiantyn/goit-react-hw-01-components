@@ -7,23 +7,25 @@ import Statistics from './Components/Statistics/Statistics';
 import StatEl from './Components/StatEl/StatEl';
 import statistic from './statistical-data.json';
 import StatList from './Components/StatList/StatList';
-// const items = { desc };
+const items = { desc };
 function App() {
   return (
-    // <Container>
-    //   <Profile>
-    //     <ProfileDesc
-    //       name={desc.name}
-    //       avatar={desc.avatar}
-    //       tag={desc.tag}
-    //       location={desc.location}
-    //     ></ProfileDesc>
-    //     <Stats stats={desc.stats}></Stats>
-    //   </Profile>
-    // </Container>
-    <Container>
-      <Statistics title="Upload stats" statitems={statistic}></Statistics>
-    </Container>
+    <>
+      <Container>
+        <Profile>
+          <ProfileDesc
+            name={desc.name}
+            avatar={desc.avatar}
+            tag={desc.tag}
+            location={desc.location}
+          ></ProfileDesc>
+          <Stats stats={desc.stats}></Stats>
+        </Profile>
+      </Container>
+      <Container>
+        <Statistics title="Upload stats" statitems={statistic}></Statistics>
+      </Container>
+    </>
   );
 }
 export default App;
