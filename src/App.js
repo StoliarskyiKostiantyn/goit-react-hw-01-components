@@ -7,6 +7,9 @@ import Statistics from './Components/Statistics/Statistics';
 import StatEl from './Components/StatEl/StatEl';
 import statistic from './statistical-data.json';
 import StatList from './Components/StatList/StatList';
+import FriendListItem from './Components/FriendListItem/FriendListItem';
+import FriendList from './Components/FriendList/FriendList';
+import friends from './friends.json';
 const items = { desc };
 function App() {
   return (
@@ -24,6 +27,9 @@ function App() {
       </Container>
       <Container>
         <Statistics title="Upload stats" statitems={statistic}></Statistics>
+      </Container>
+      <Container>
+        <FriendList frienditems={friends}></FriendList>
       </Container>
     </>
   );

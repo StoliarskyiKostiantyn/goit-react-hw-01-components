@@ -3,7 +3,7 @@ import StatList from '../StatList/StatList';
 function Statistics({ title, statitems }) {
   return (
     <div>
-      <h2>{title}</h2>
+      <h2 className={s.title}>{title}</h2>
       <StatList statitems={statitems}></StatList>
     </div>
   );
