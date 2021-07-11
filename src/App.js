@@ -10,6 +10,9 @@ import StatList from './Components/StatList/StatList';
 import FriendListItem from './Components/FriendListItem/FriendListItem';
 import FriendList from './Components/FriendList/FriendList';
 import friends from './friends.json';
+import transactions from './transactions.json';
+import TransactionHistory from './Components/TransactionHistory/TransactionHistory';
+import TransactionHistoryRow from './Components/TransactionHistoryRow/TransactionHistoryRow';
 const items = { desc };
 function App() {
   return (
@@ -30,6 +33,9 @@ function App() {
       </Container>
       <Container>
         <FriendList frienditems={friends}></FriendList>
+      </Container>
+      <Container>
+        <TransactionHistory items={transactions}></TransactionHistory>
       </Container>
     </>
   );
