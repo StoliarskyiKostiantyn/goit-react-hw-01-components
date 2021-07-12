@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import s from './TransactionHistoryRow.module.css';
 function TransactionHistoryRow({ type, amount, currency }) {
   return (
@@ -7,5 +8,10 @@ function TransactionHistoryRow({ type, amount, currency }) {
       <td>{currency}</td>
     </>
   );
+}
+TransactionHistoryRow.propTypes = {
+  type: PropTypes.string,
+  amount: PropTypes.string,
+  currency:PropTypes.string,
 }
 export default TransactionHistoryRow;

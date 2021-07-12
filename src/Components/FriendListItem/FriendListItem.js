@@ -1,5 +1,6 @@
+import PropTypes from 'prop-types';
 import s from './FriendListItem.module.css';
-function FriendListItem({ status, avatar, name, isOnline }) {
+function FriendListItem({ avatar, name, isOnline }) {
   const onlineStatus = isOnline ? 'online' : 'offline';
   return (
     <>
@@ -8,5 +9,10 @@ function FriendListItem({ status, avatar, name, isOnline }) {
       <p className={s.name}>{name}</p>
     </>
   );
+}
+FriendListItem.propTypes = {
+  avatar: PropTypes.string,
+  name: PropTypes.string,
+  isOnline:PropTypes.bool, 
 }
 export default FriendListItem;
