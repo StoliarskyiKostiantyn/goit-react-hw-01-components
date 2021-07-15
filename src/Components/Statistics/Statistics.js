@@ -4,7 +4,7 @@ import StatEl from '../StatEl/StatEl';
 function Statistics({ title, statitems }) {
   return (
     <div>
-      {title ? <h2 className={s.title}>{title}</h2> : <></>}
+      {title && <h2 className={s.title}>{title}</h2>}
       <ul className={s.statlist}>
       {statitems.map(statitem => (
         <li key={statitem.id}>
