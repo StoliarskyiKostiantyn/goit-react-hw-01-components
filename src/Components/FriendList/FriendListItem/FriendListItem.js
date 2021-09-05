@@ -5,7 +5,12 @@ function FriendListItem({ avatar, name, isOnline }) {
   return (
     <>
       <span className={s[onlineStatus]}></span>
-      <img className={s.avatar} src={avatar} alt="Фото" width="48" />
+      <img
+        className={s.avatar}
+        src={avatar}
+        alt="Фото"
+        width="48"
+      />
       <p className={s.name}>{name}</p>
     </>
   );
@@ -13,6 +18,6 @@ function FriendListItem({ avatar, name, isOnline }) {
 FriendListItem.propTypes = {
   avatar: PropTypes.string,
   name: PropTypes.string,
-  isOnline:PropTypes.bool, 
-}
+  isOnline: PropTypes.bool,
+};
 export default FriendListItem;

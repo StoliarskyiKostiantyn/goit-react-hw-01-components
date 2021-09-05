@@ -12,6 +12,6 @@ function TransactionHistoryRow({ type, amount, currency }) {
 TransactionHistoryRow.propTypes = {
   type: PropTypes.string,
   amount: PropTypes.string,
-  currency:PropTypes.string,
-}
+  currency: PropTypes.string,
+};
 export default TransactionHistoryRow;
