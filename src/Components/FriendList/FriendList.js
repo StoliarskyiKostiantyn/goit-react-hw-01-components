@@ -4,14 +4,14 @@ function FriendList({ frienditems }) {
   return (
     <ul className={s.friendlist}>
       {frienditems.map(frienditem => (
-        <li key={frienditem.id} className={s.item}>
-          <FriendListItem
-            isOnline={frienditem.isOnline}
-            status={frienditem.status}
-            avatar={frienditem.avatar}
-            name={frienditem.name}
-          />
-        </li>
+        <FriendListItem
+          key={frienditem.id}
+          className={s.item}
+          isOnline={frienditem.isOnline}
+          status={frienditem.status}
+          avatar={frienditem.avatar}
+          name={frienditem.name}
+        />
       ))}
     </ul>
   );
