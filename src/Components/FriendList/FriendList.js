@@ -10,7 +10,7 @@ function FriendList({ frienditems }) {
             status={frienditem.status}
             avatar={frienditem.avatar}
             name={frienditem.name}
-          ></FriendListItem>
+          />
         </li>
       ))}
     </ul>

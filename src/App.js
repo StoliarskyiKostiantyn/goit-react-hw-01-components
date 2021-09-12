@@ -18,21 +18,16 @@ function App() {
           tag={desc.tag}
           location={desc.location}
           stats={desc.stats}
-        ></Profile>
+        />
       </Container>
       <Container>
-        <Statistics
-          title="Upload"
-          statitems={statistic}
-        ></Statistics>
+        <Statistics title="Upload" statitems={statistic} />
       </Container>
       <Container>
-        <FriendList frienditems={friends}></FriendList>
+        <FriendList frienditems={friends} />
       </Container>
       <Container>
-        <TransactionHistory
-          items={transactions}
-        ></TransactionHistory>
+        <TransactionHistory items={transactions} />
       </Container>
     </>
   );
